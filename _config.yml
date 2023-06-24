@@ -1,4 +1,4 @@
-description: The official Project27 site. Skills that matter to blind or learning disabled people. .
+description: The official Project27 Solutions site. Designing and diffusing solutions in partnership with researchers and businesses.
 collections:
   volunteering:
     output: true
@@ -24,6 +24,4 @@ include:
 baseurl:
 excerpt_separator: <!-- excerpt-end -->
 brand: Project27
-motto: Skills that matter
-product: Guide
-google_analytics: G-ET7GNZ55YP
+motto: Solutions that work

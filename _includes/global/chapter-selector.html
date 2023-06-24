@@ -1,0 +1,39 @@
+<div class="dropdown bg-my-nav">
+<button type="button" class="Read-More" data-toggle="collapse" data-target="#chapter-selector" aria-haspopup="true">Chapter</button>
+        <div class="dropdown-menu" id="chapter-selector">
+  {% if page.url contains "MPS" %}
+  {% for item in site.data.chapters.MPS %}
+          <a class="dropdown-item" href="{{ item.link | prepend: site.baseurl }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+  {% endfor %}
+    {% elsif page.url contains "CL" %}
+  {% for item in site.data.chapters.CL %}
+{% if item.name == "Python" or item.name == "R" %}
+{% continue %}
+{% endif %}
+          <a class="dropdown-item" href="{{ item.link | prepend: site.baseurl }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+  {% endfor %}
+  {% elsif page.url contains "statistics" %}
+  {% for item in site.data.chapters.statistics %}
+          <a class="dropdown-item" href="{{ item.link | prepend: site.baseurl }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+  {% endfor %}
+  {% elsif page.url contains "cookbook" %}
+  {% for item in site.data.chapters.cookbook %}
+          <a class="dropdown-item" href="{{ item.link | prepend: site.baseurl }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+  {% endfor %}
+  {% elsif page.url contains "vocal" %}
+  {% for item in site.data.chapters.vocal %}
+          <a class="dropdown-item" href="{{ item.link | prepend: site.baseurl }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+  {% endfor %}
+    {% elsif page.url contains "twist" %}
+  {% for item in site.data.chapters.twist  limit: 4 %}
+          <a class="dropdown-item" href="{{ item.link | prepend: site.baseurl }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+  {% endfor %}
+    {% elsif page.url contains "logbook" %}
+  {% for item in site.data.chapters.logbook  offset: 2 %}
+          <a class="dropdown-item" href="{{ item.link | prepend: site.baseurl }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+  {% endfor %}
+  {% else %}
+  <p>Please select a volume before selecting a chapter.</p>
+  {% endif %}
+</div>
+</div>

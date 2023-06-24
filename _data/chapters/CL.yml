@@ -1,0 +1,18 @@
+- name: BASH
+  link: /guide/CL/bash/index.html
+  description: Bash is a command line interface, a shell, between the user and the computer kernel.
+- name: Git
+  link: /guide/CL/git/index.html
+  description: Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
+- name: Markdown
+  link: /guide/CL/markdown/index.html
+  description: Markdown is a lightweight markup language with plain-text-formatting syntax. ... Markdown is often used to format readme files, for writing messages in online discussion forums, and to create rich text using a plain text editor.
+- name: Web development
+  link: /guide/CL/web/index.html
+  description: Web development constitutes anything from html, to css; from javascript, to Jekyll, and beyond.
+- name: Python
+  link: /guide/CL/python/index.html
+  description: Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. ... Python's simple, easy to learn syntax emphasizes readability and therefore reduces the cost of program maintenance. Python supports modules and packages, which encourages program modularity and code reuse.
+- name: R
+  link: /guide/CL/R/index.html
+  description: R is an open source language and environment for statistical computing and graphics. ... RMarkdown allows the creation of documents that serve as a neat record of statistical analysis, including the R script used to analyse data, the outputs, and human readable notes using Markdown syntax.

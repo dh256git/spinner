@@ -1,0 +1,18 @@
+---
+layout: default
+title: Classical mechanics
+buttonStyle: mybtnclassicalmechanics
+levelToOpen: section
+buttonStyle: fg-guide-chap
+backgroundStyle: bg-guide-chap
+listOfIcons: [["", "Kinematics.jpg"], ["", "Dynamics.png"]]
+---
+
+    <h2 class="cover-heading">Chapter on {{ page.title | downcase }}</h2>
+
+<p>Mechanics is the branch of applied mathematics dealing with motion and forces producing motion..</p>
+
+<hr>
+
+{% assign dataFile = site.data.sections.mechanics %}
+{% include global/grid-generator.html heading="h3" %}

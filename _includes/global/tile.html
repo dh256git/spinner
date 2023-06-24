@@ -1,0 +1,31 @@
+      <{{ include.heading }}>{{ include.article }} {{ item.name }}</{{ include.heading }}>
+{% if page.listOfIcons[loopIndex][0] == "" %}
+<img src="{{ '/assets/images/' | prepend: site.baseurl }}{{ page.listOfIcons[loopIndex][1] }}" aria-hidden="true" alt="{{ page.listOfIcons[loopIndex][1] }}" width="45px">
+{% else %}
+<i class="{{ page.listOfIcons[loopIndex][0] }} fa-lg" aria-hidden="true"></i>
+{% endif %}
+
+      <p>{{ item.description }}</p>
+
+{% if page.title == "Project27 Guide" %}
+<div class="row">
+<div class="col">
+<div id="{{ page.listOfDots[loopIndex] }}"></div>
+
+{% include guide/why.html %}
+</div>
+</div>
+<div class="row">
+<div class="col">
+<button onclick="{{ page.listOfFunctions[loopIndex] }}" id="{{ page.listOfButtons[loopIndex] }}"class= "Read-More">Read More</button>
+</div>
+</div>
+{% endif %}
+
+      <a class="{{ page.buttonStyle }}" href="{{ item.link | prepend: site.baseurl }}">
+{% if item.buttonLabel %}      
+{{ item.buttonLabel }}
+{% else %}
+      Open the {{ item.name }} {{ page.levelToOpen }}
+{% endif %}
+      </a>

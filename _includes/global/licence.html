@@ -1,0 +1,30 @@
+{% if page.licence == "copyright" %}
+Copyright © 2023 Project27. All rights reserved.
+{% elsif page.url contains "/blog/" %}
+<div class="row">
+<div class="col-md-2">
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Licence" style="margin: 10px" src="{{ '/assets/images/CC-88x31.png' | prepend: site.baseurl }}"/></a>
+</div>
+<div class="col-md-10">
+Except where otherwise noted, posts of the <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Project27 Blog</span> are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.</a>
+</div>
+</div>
+{% elsif page.url contains "/guide/" %}
+<div class="row">
+<div class="col-md-2">
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons Licence" style="margin: 10px" src="{{ '/assets/images/CC-88x31.png' | prepend: site.baseurl }}"/></a>
+</div>
+<div class="col-md-10">
+Except where otherwise noted, articles of the <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Project27 Guide</span> are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License.</a>
+</div>
+</div>
+{% else %}
+<div class="row">
+<div class="col-md-2">
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons Licence" style="margin: 10px" src="{{ '/assets/images/CC-88x31.png' | prepend: site.baseurl }}"/></a>
+</div>
+<div class="col-md-10">
+Except where otherwise noted, <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Project27</span> materials hosted by <a xmlns:cc="http://creativecommons.org/ns#" href="{{ '/about/team/Daniel/index.html' | prepend: site.baseurl }}" property="cc:attributionName" rel="cc:attributionURL">Daniel Hajas</a> are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License.</a>
+</div>
+</div>
+{% endif %}

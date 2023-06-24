@@ -1,0 +1,85 @@
+---
+layout: default
+---
+
+{% if page.url contains "blog/" %}
+
+{% if page.url contains "twist" %}
+{% assign topic = site.data.chapters.twist[page.topicIndex] %}
+{% elsif page.url contains "logbook" %}
+{% assign topic = site.data.chapters.logbook[page.topicIndex] %}
+{% endif %}
+
+{% if page.url contains "dev/" %}
+{% assign theCategory = site.categories.dev %}
+{% elsif page.url contains "issues/" %}
+{% assign theCategory = site.categories.issues %}
+{% elsif page.url contains "disabilities/" %}
+{% assign theCategory = site.categories.disabilities %}
+{% elsif page.url contains "identities/" %}
+{% assign theCategory = site.categories.identities %}
+{% elsif page.url contains "reading/" %}
+{% assign theCategory = site.categories.reading %}
+{% elsif page.url contains "special-interests/" %}
+{% assign theCategory = site.categories.special-interests %}
+{% endif %}
+
+  <h2>{{ topic.name }}</h2>
+
+<p>{{ topic.description }}</p>
+
+{{ content }}
+
+<h3>Complete list of posts</h3>
+
+<p>The following list is a growing collection of posts in the "{{ topic.name }}" category.</p>
+
+<div class="container">
+{% include global/preview.html %}
+</div>
+
+{% else %}
+
+{% if page.url contains "desserts/" %}
+{% assign theCategory = site.categories.desserts %}
+{% elsif page.url contains "fish/" %}
+{% assign theCategory = site.categories.fish %}
+{% elsif page.url contains "meats/" %}
+{% assign theCategory = site.categories.meats %}
+{% elsif page.url contains "pastas/" %}
+{% assign theCategory = site.categories.pastas %}
+{% elsif page.url contains "risotto/" %}
+{% assign theCategory = site.categories.risotto %}
+{% elsif page.url contains "salads/" %}
+{% assign theCategory = site.categories.salads %}
+{% elsif page.url contains "soups/" %}
+{% assign theCategory = site.categories.soups %}
+{% elsif page.url contains "wraps/" %}
+{% assign theCategory = site.categories.wraps %}
+{% elsif page.url contains "bash/" %}
+{% assign theCategory = site.categories.bash %}
+{% elsif page.url contains "git/" %}
+{% assign theCategory = site.categories.git %}
+{% elsif page.url contains "markdown/" %}
+{% assign theCategory = site.categories.markdown %}
+{% elsif page.url contains "web/" %}
+{% assign theCategory = site.categories.web %}
+{% elsif page.url contains "capturing-stories/" %}
+{% assign theCategory = site.categories.capturing-stories %}
+{% elsif page.url contains "sharing-stories/" %}
+{% assign theCategory = site.categories.sharing-stories %}
+{% endif %}
+
+  <h2>{{ page.title }}</h2>
+
+{{ content }}
+
+<h3>Complete list of posts</h3>
+
+<p>The following list is a growing collection of posts in the "{{ page.title }}" chapter.</p>
+
+<div class="container">
+{% include global/preview.html %}
+</div>
+
+{% endif %}

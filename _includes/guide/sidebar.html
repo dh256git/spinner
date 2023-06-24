@@ -1,0 +1,70 @@
+{% if page.layout == "recipes" or page.layout == "recipe-card" %}
+      <div>
+<h4>More like this</h4>
+<p>Did you like this recipe? Ask the video chef to demonstrate how it's done. Alternatively, you can look at my hand picked online resources of similar recipes, or select another chapter of the cookbook in the header.</p>
+
+<h5>Video chef</h5>
+<p>Check out the <a href="{{ page.video }}">video chef</a> for inspiration of preparing this recipe.</p>
+
+<h5>Other {{ page.title | downcase }} recipes</h5>
+  <ul>
+    {% for recipe in page.additional %}
+      <li><a href="{{ recipe.link }}">{{ recipe.name }}</a></li>
+    {% endfor %}
+  </ul>
+
+<h5>More recipes from the {{ page.menu }} menu</h5>
+  <ul>
+  {% if page.url contains "desserts" %}
+    {% for post in site.categories.desserts %}
+      <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+    {% endfor %}
+    {% elsif page.url contains "fish" %}
+        {% for post in site.categories.fish %}
+      <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+    {% endfor %}
+    {% elsif page.url contains "meats" %}
+        {% for post in site.categories.meats %}
+      <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+    {% endfor %}
+        {% elsif page.url contains "pastas" %}
+        {% for post in site.categories.pastas %}
+      <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+    {% endfor %}
+        {% elsif page.url contains "risotto" %}
+        {% for post in site.categories.risotto %}
+      <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+    {% endfor %}
+        {% elsif page.url contains "salads" %}
+        {% for post in site.categories.salads %}
+      <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+    {% endfor %}
+        {% elsif page.url contains "soups" %}
+        {% for post in site.categories.soups %}
+      <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+    {% endfor %}
+        {% elsif page.url contains "wraps" %}
+        {% for post in site.categories.wraps %}
+      <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+    {% endfor %}
+    {% endif %}
+  </ul>
+
+      </div>
+{% elsif page.url contains "cookbook/" %}
+    <h4>Chapters in the cookbook</h4>
+<p>These are the menus to select a meal from.</p>
+    <ul>
+    {% for item in site.data.chapters.cookbook %}
+    <li>
+    <a href="{{ item.link | prepend: site.baseurl }}">{{ item.name }}</a>
+    </li>
+    {% endfor %}
+    </ul>
+{% elsif page.url contains "vocal/" %}
+<h4>Did you like this story?</h4>
+<p>Listen to further stories by selecting one from the list below.</p>
+{% include guide/vocal-stories.html %}
+{% else %}
+
+{% endif %}

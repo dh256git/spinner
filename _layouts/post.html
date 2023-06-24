@@ -1,0 +1,56 @@
+---
+layout: default
+---
+
+  <div class="row">
+    <div class="col-md-8">
+      {% if page.layout == "post" or page.layout == "recipes" or page.layout == "recipe-card" %}
+  {% include blog/pagination-by-tag.html %}
+  {% elsif page.branch == "LogBook" or page.branch == "Twist" %}
+        {% include blog/branch-and-featured.html %}
+  {% endif %}
+    </div>
+    <div class="col-md-4">
+      <button type="button" class="mysecondarybtn" data-toggle="collapse" data-target="#meta-info" aria-controls="meta-info" aria-expanded="false" aria-label="Page information">
+    <span><i class="fa fa-info-circle fa-lg" aria-hidden="false"></i></span>
+  </button>
+<div class="blog-post-meta collapse" id="meta-info">
+{% include global/meta.html %}
+</div>
+    </div>
+    </div>
+
+  <div class="row">
+    <div class="col-md-8 blog-main">
+      <div class="blog-post">
+
+{% assign content_array = page.content | split: site.excerpt_separator %}
+{% assign excerpt_only = content_array | first %}
+{% assign content_remainder = content_array | last %}
+
+<h2>{{ page.title }}</h2>
+
+  {{ excerpt_only | append: '</p>'}}
+
+{% include global/blog-cover.html %}
+
+{% if page.youtube %}
+{% include global/youtube-frame.html link=page.youtube %}
+{% endif %}
+
+  {{ content_remainder | remove_first: '</p>'}}
+
+      </div><!-- /.blog-post -->
+
+<hr>
+{% include blog/pagination-by-tag.html %}
+  </div><!-- /.blog-main -->
+
+    <aside class="col-md-4 blog-sidebar">
+{% if page.url contains "blog/" %}
+{% include blog/sidebar.html %}
+{% elsif page.url contains "guide/" %}
+{% include guide/sidebar.html %}
+{% endif %}
+    </aside><!-- /.blog-sidebar -->
+      </div><!-- /.row -->

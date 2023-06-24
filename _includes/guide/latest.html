@@ -1,0 +1,32 @@
+{% assign digital-skills = site.posts | where: "volume","digital skills" %}
+{% assign cookbook = site.posts | where: "volume","cookbook" %}
+{% assign vocal = site.posts | where: "volume","vocal" %}
+
+{% if page.volume == "digital skills" %}
+{% assign latest-posts = digital-skills %}
+{% elsif page.volume == "cookbook" %}
+{% assign latest-posts = cookbook %}
+{% elsif page.volume == "vocal" %}
+{% assign latest-posts = vocal %}
+{% endif %}
+
+<div id="spotlight" class="spotlight">
+<h3>What's new in {{ page.volume }}</h3>
+<div class="featured-feed">
+{% for post in latest-posts limit:3 %}
+<div class="row">
+<div class="col-3">
+{% if post.image %}
+<img src="{{ '/assets/images/guide/' | append: post.image | prepend: site.baseurl }}" alt="{{ post.alt }}" class="thumbnail-image-blog1">
+{% else %}
+<img src="{{ '/assets/images/Project27 logo.png' | prepend: site.baseurl }}" alt="A placeholder image, showing the Project27 logo." class="thumbnail-image-blog">
+{% endif %}
+</div>
+<div class="col-9">
+<p><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
+<p>{{ post.date | date_to_rfc822 | date: "%d %b %Y" }}</p>
+</div>
+</div>
+{% endfor %}
+</div>
+</div>

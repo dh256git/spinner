@@ -1,0 +1,58 @@
+---
+layout: default
+title: Guide
+tagline: A journal of life-long learning
+author: Daniel Hajas
+reviewer: Danielle Garratt
+date: 2022-09-01
+licence: copyright
+buttonStyle: fg-guide-land
+backgroundStyle: bg-guide-land
+listOfIcons: [["fas fa-atom", ""], ["fas fa-desktop", ""], ["fas fa-chart-line"], ["fas fa-utensils", ""], ["fas fa-record-vinyl", ""]]
+levelToOpen: volume
+listOfDots: ["dots", "dots1", "dots2", "dots3", "dots4"]
+listOfMore: ["more", "more1", "more2", "more3", "more4"]
+listOfButtons: ["Read-more", "Read-more1", "Read-more2", "Read-more3", "Read-more4"]
+listOfFunctions: ["readMoreMPS()", "readMoreComputerLiteracy()", "readMoreStatistics()", "readMoreCookbook()", "readMoreVocal()"]
+---
+<div class="container">
+    <h2 class="cover-heading">The {{ site.product }}: {{ page.tagline }}</h2>
+
+<p>
+The {{ site.brand }} {{ site.product }} is a collection of accessible notes for learning.
+Our library has a science collection, and a lifestyle collection, organised into volumes.
+</p>
+
+<p>
+Blind or learning disabled people can study our notes to learn about topics they are interested in.
+Our volunteers and members can contribute to expanding the {{ site.product }}, and develop a wide range of skills on the way.
+</p>
+
+{% include global/cover-image.html image="guide-cover.jpg" alt="Someone is holding a paper map, and pointing at a location with a finger." %}
+
+<hr>
+
+<h3>Science collection</h3>
+
+<p>The science collection consists of two volumes, including notes on mathematical and physical sciences, and digital skills respectively. We recognize the importance of science, technology, engineering, and mathematics (STEM) as prerequisites for skills development, innovation, creativity, entrepreneurship, and employability</p>
+
+<p>Science and Technology Editor: <a href="{{ '/about/team/Daniel/index.html' | prepend: site.baseurl }}">Daniel Hajas</a></p>
+
+{% assign dataFile = site.data.volumes.guide %}
+{% assign gridLimit = 2 %}
+{% include global/grid-generator.html heading="h4" %}
+
+<hr>
+
+<h3>Lifestyle collection</h3>
+
+<p>
+The lifestyle collection consists of two volumes, including notes on cooking, and storytelling respectively. We recognise the importance of human stories, social interaction, and peer support in the community. Cooking and sharing stories is a great way to bond, build confidence, and develop social skills.
+</p>
+
+<p>Lifestyle Editor: <a href="{{ '/about/team/Danielle/index.html' | prepend: site.baseurl }}">Danielle Garratt</a></p>
+{% assign dataFile = site.data.volumes.guide %}
+{% assign gridOffset = 3 %}
+{% include global/grid-generator.html heading="h4" %}
+
+</div>

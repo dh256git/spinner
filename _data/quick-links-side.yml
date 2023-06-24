@@ -1,0 +1,28 @@
+about:
+  - name: What we do
+    link: /about/index.html
+  - name: Who we are
+    link: /about/team/index.html
+  - name: Contact us and FAQs
+    link: /contact/index.html
+productsAndServices:
+  - name: Become a volunteer
+    link: /volunteering/become-a-volunteer.html
+  - name: Book a support session
+    link: /support/index.html
+  - name: Pricing
+    link: /support/pricing.html
+media:
+  - name: News
+    link: /about/news.html
+  - name: Posts
+    link: /blog/all-posts.html
+development:
+  - name: Roadmap
+    link: /blog/logbook/dev/change-log.html
+  - name: Issue tracking
+    link: /blog/logbook/issues/2020/06/05/initialise.html
+  - name: Git Hub
+    link: https://github.com/dh256git/project27
+  - name: Surge
+    link: http://p27skills.surge.sh

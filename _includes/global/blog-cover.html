@@ -1,0 +1,5 @@
+{% if page.image %}
+<img src="{{ '/assets/images/blog/' | prepend: site.baseurl }}{{ page.image }}" class="blog-cover" alt="{{ page.alt }}">
+{% else %}
+<img src="{{ '/assets/images/Project27 logo.png' | prepend: site.baseurl }}" class="blog-cover" alt="The Project27 logo, used as a placeholder image.">
+{% endif %}

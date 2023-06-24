@@ -1,0 +1,80 @@
+{% if page.listOfMore[loopIndex] == "more" %}
+<div class= "hidden-text" id="more">Editing the MPS volume is a good opportunity to</p>
+<ol>
+<li>
+revise the author's knowledge on physics;
+</li>
+<li>
+organise previously written notes on mathematics and physics
+<ul>
+<li>
+into sections and chapters, which make more structural sense, than the original organisation of notes, and
+</li>
+<li>
+ according to {{ site.brand }} guidelines;
+</li>
+</ul>
+</li>
+<li>
+research, experiment with, and log ways of writing scientific notation in accessible formats.
+</li>
+</ol>
+</div>
+{% elsif page.listOfMore[loopIndex] == "more1" %}
+  <div class= "hidden-text" id="more1">Editing the Computer literacy volume is a good opportunity to</p>
+
+<ol>
+<li>
+organise "how to" notes on various topics of computer literacy,
+</li>
+<li>
+provide specific guidance and alternative solutions for screen reader users, where available online resources are not considering accessibility.
+</li>
+</ol>
+</div>
+{% elsif page.listOfMore[loopIndex] == "more2" %}
+  <div class= "hidden-text" id="more2"><p>Understanding the calculations of statistics, and being able to perform statistical analysis may be useful in most experimental branches of science, for example psychology, sociology, computer science, or any branch of natural science. Editing the Statistics volume is a good opportunity to</p>
+<ol>
+<li>
+study how statistical methods work at the mathematical and conceptual level;
+</li>
+<li>
+practice statistical analysis using the open source program "R";
+</li>
+<li>
+share guidance on how to use R-markdown to interact with R in accessible ways.
+</li>
+</ol>
+</div>
+{% elsif page.listOfMore[loopIndex] == "more3" %}
+  <div class= "hidden-text" id="more3"><p>Editing the Cookbook is a good opportunity to</p>
+<ol>
+<li>
+challenge the misconception of "blind people cannot cook", by showing that people with sight loss may enjoy being creative in the kitchen, and are able to excel in gastronomical activities;
+</li>
+<li>
+organise the {{ site.brand }} recipes into an online cookbook, according to the project guidelines;
+</li>
+<li>
+research semantic text-to-speech solutions in context of measuring units used in recipes;
+</li>
+<li>
+study the management of simple databases, such as list of ingredients.
+</li>
+</ol>
+</div>
+{% elsif page.listOfMore[loopIndex] == "more4" %}
+  <div class= "hidden-text" id="more4"><p>Editing the Vocal album is a good opportunity to</p>
+<ol>
+<li>
+study and share best practices of spcific aspects of journalism, such as interview techniques;
+</li>
+<li>
+study and share how to do audio editing in practice using the Reaper program;
+</li>
+<li>
+listen to, honour, and capture stories of family, friends, and other acquaintances.
+</li>
+</ol>
+</div>
+{% endif %}

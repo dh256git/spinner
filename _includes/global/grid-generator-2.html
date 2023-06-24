@@ -1,0 +1,28 @@
+{% for item in dataFile limit: gridLimit offset: gridOffset %}                       
+{% assign loopIndex = forloop.index0 | plus: gridOffset %} 
+    {% assign rowfinder = forloop.index | modulo: 2 %}
+<!-- Hide the item in the grid. Remove if statement to show item. -->
+{% if item.name == gridHide %}
+{% continue %}
+{% else %}
+    {% if rowfinder == 1 %}
+<div class="row">
+<div class="col-md">
+{% include global/tile-2.html %}
+</div>
+    {% elsif rowfinder == 0 %}
+<div class="col-md">
+{% include global/tile-2.html %}
+</div>
+</div>
+    {% else %}
+<div class="col-md">
+{% include global/tile-2.html %}
+</div>
+    {% endif %}
+    {% endif %}
+{% endfor %}
+<!-- if more than two columns are desired and modulo can take other values than 0 and 1. -->
+{% if rowfinder != 0 %}
+</div>
+{% endif %}

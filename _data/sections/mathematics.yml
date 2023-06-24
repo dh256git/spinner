@@ -1,0 +1,9 @@
+- name: Complex numbers
+  link: /guide/MPS/mathematics/complex-numbers/index.html
+  description: Complex numbers are useful abstract quantities that can be used in calculations and result in physically meaningful solutions.
+- name: Differential equations
+  link: /guide/MPS/mathematics/differential-equations/index.html
+  description: A differential equation is an equation that contains one or more functions with its derivatives. The derivatives of the function define the rate of change of a function at a point. The main purpose of differential equation is the study of solutions that satisfy the equations, and the properties of the solutions.
+- name: Vectors
+  link: /guide/MPS/mathematics/vectors/index.html
+  description: Vectors are quantities having direction as well as magnitude, especially as determining the position of one point in space relative to another.

@@ -1,0 +1,23 @@
+<div class="dropdown bg-my-nav">
+<button type="button" class="Read-More" data-toggle="collapse" data-target="#volume-selector" aria-haspopup="true">Volume</button>
+        <div class="dropdown-menu" id="volume-selector">
+  {% if page.url contains "seasonal" %}
+  {% for item in site.data.volumes.seasonal %}
+          <a class="dropdown-item" href= "{{ item.link | prepend: site.baseurl }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+  {% endfor %}
+  {% elsif page.url contains "guide" %}
+  {% for item in site.data.volumes.guide %}
+{% if item.name == "Statistics" %}
+{% continue %}
+{% endif %}
+          <a class="dropdown-item" href= "{{ item.link | prepend: site.baseurl }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+  {% endfor %}
+    {% elsif page.url contains "blog" %}
+  {% for item in site.data.volumes.blog %}
+          <a class="dropdown-item" href= "{{ item.link | prepend: site.baseurl }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+  {% endfor %}
+  {% else %}
+  <p>Please open the blog or the {{ site.product }} before selecting a volume.</p>
+  {% endif %}
+</div>
+</div>

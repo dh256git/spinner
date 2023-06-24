@@ -1,0 +1,8 @@
+- name: LogBook
+  link: /blog/logbook/index.html
+  tagline: Recording issues and solutions
+  description: The LogBook is a set of technical posts on topics related to developing Project27. We mainly focus on accessible ways of using MathML and LaTeX. Nevertheless, we also log the use of tools, such as markdown and Jekyll.
+- name: TWIST
+  link: /blog/twist/index.html
+  tagline: The Way I See Things
+  description: We share "The Way I See Things". We would like to encourage people with sight-loss and learning difficulties. We wish to inspire their families, teachers, and friends. We want to be open, and lead by example.

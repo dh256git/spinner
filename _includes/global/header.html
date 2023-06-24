@@ -1,0 +1,39 @@
+<div class="row">
+<div class="col-md-6" id="skip">
+<a class="d-flex justify-content-center" href="#mainContent">Skip to main content</a>
+</div>
+<div class="col-md-6" id="skip">
+<a class="d-flex justify-content-center" href="#footerContent">Skip to footer</a>
+</div>
+</div>
+
+<div class="row">
+<div class="col-md-10">
+<div class="row">
+<div class="col-md-8">
+      <div class="masthead-brand">
+<a href="{{ '/index.html' | prepend: site.baseurl }}" class="navbar-brand">
+      <img src="{{ '/assets/images/Project27 logo.png' | prepend: site.baseurl }}" alt="Project 27 logo" class="logo" width="90em">
+      </a>
+      {{ site.motto }}
+      </div>
+</div>
+<div class="col-md-4">
+{% include global/navigation.html %}
+</div>
+</div>
+<div class="row">
+<div class="col">
+{% include global/navigation-secondary.html %}
+</div>
+</div>
+<div class="row">
+<div class="col">
+{% include global/announcements.html %}
+</div>
+</div>
+</div>
+<div class="col-md-2">
+{% include global/quick-links-side.html %}
+</div>
+</div>

@@ -1,0 +1,36 @@
+- name: Desserts and breakfast
+  link: /guide/cookbook/desserts/index.html
+  description: Who says it's too early for desserts? Have something sweet, as dinner or as breakfast.
+  buttonLabel: Give me something sweet
+- name: Fish dish and other sea bits
+  link: /guide/cookbook/fish/index.html
+  description: Everything revolves around fish and other sea food in this chapter. Dive straight in deep water!
+  buttonLabel: Give me a fish dish
+- name: Meat feast and casseroles
+  link: /guide/cookbook/meats/index.html
+  description: Meat is the essence of these dishes. Don't like it? Try it with vegetarian substitutes. 
+  buttonLabel: Give me meaty recipes
+- name: Pasta
+  link: /guide/cookbook/pastas/index.html
+  description: Pasta if there is nothing else to eat. Just kidding.  There is nothing wrong with cooking pasta. Nice and simple.
+  buttonLabel: Give me a saucy pasta recipe
+- name: Risotto
+  link: /guide/cookbook/risotto/index.html
+  description: All that cheese and rice. Prefer the Spanish way? Watch out for paella recipes too.
+  buttonLabel: Give me a risotto meal
+- name: Salads and dips
+  link: /guide/cookbook/salads/index.html
+  description: Salad is the path to heaven, if the roads of meat are congested. Try something green that's actually legal.
+  buttonLabel: Give me some salad
+- name: Soups to scoop
+  link: /guide/cookbook/soups/index.html
+  description: Soup is good! Let's scoop some soup with a spoon.
+  buttonLabel: Give me a soup to scoop
+- name: Wraps and rolls
+  link: /guide/cookbook/wraps/index.html
+  description: Let's roll and roll and roll. The options of filling are unlimited. Ready, steady, roll!
+  buttonLabel: Give me a thing to roll
+- name: Freezer inventory
+  link: /guide/cookbook/general/freezer/inventory.html
+  description: This is the inventory of things in my freezer. It's always good to know what we have at home.
+  buttonLabel: Freezer inventory

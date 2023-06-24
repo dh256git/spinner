@@ -1,0 +1,9 @@
+<div class="row">
+{% for item in site.data.social-side %}
+    <div class="col-md-3">
+    <a href="{{ item.link }}">
+    <img src="{{ item.icon }}" alt="{{ item.name }}" class="img-follow-us-new">
+    </a>
+    </div>
+{% endfor %}
+    </div>

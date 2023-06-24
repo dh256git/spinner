@@ -1,0 +1,6 @@
+- name: Statistics explained
+  link: /guide/statistics/statistics-explained/index.html
+  description: Statistics explained is a chapter of scribbles on concepts and techniques of statistics, explained through analogies and mathematical equations.
+- name: Statistics practice
+  link: /guide/statistics/statistics-practice/index.html
+  description: Statistics in practice looks at how to perform data logging, and data analysis using programming tools, such as Python or R.

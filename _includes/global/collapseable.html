@@ -1,0 +1,10 @@
+<div class="dropdown">
+  <button type="button" class="{{ page.buttonStyle }}" data-toggle="collapse" data-target="#{{ include.ID }}" aria-controls="{{ include.ID }}" aria-expanded="false">
+                {{ include.trigger }}
+                </button>
+        <div class="dropdown-menu {{ include.style }}" aria-label="{{ include.trigger }}" id="{{ include.ID }}">      
+<p>
+{{ include.paragraph }}
+</p>
+</div>
+</div>

@@ -1,0 +1,28 @@
+{% include global/reading-time.html %}
+{% if page.author %}
+<p>Written by: {{ page.author }}</p>
+{% else %}
+<p>Written by: Daniel Hajas</p>
+{% endif %}
+{% if page.reviewer %}
+<p>Reviewed by: {{ page.reviewer }}. <a href="{{ '/guidelines/review.html' | prepend: site.baseurl }}">Read our guidelines on reviews.</a></p>
+{% else %}
+<p>Reviewed by: To be assigned. <a href="{{ '/guidelines/review.html' | prepend: site.baseurl }}">Read our guidelines on reviews.</a></p>
+{% endif %}
+{% if page.date %}
+<p>Published on: {{ page.date | date_to_string }}</p>
+{% else %}
+<p>Published on: {{ '2021-01-01' | date_to_string }}</p>
+{% endif %}
+{% if page.updated %}
+<p>Revised on: {{ page.updated | date_to_string }}</p>
+{% else %}
+<p>Revised on: {{ '2023-01-01' | date_to_string }}</p>
+{% endif %}
+{% if page.updated %}
+{% assign reviseYear = page.updated | date: '%Y' | plus: 2 %}
+{% assign updatedDayMonth = page.updated | date: '%-d %b' %}
+<p>Revision due: {{ updatedDayMonth }} {{ reviseYear }}</p>
+{% else %}
+<p>Revision due: {{ '2024-01-01' | date_to_string }}</p>
+{% endif %}

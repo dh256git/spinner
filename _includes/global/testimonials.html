@@ -1,0 +1,16 @@
+<div id="spotlight" class="spotlight">
+<h3>What people say</h3>
+<div class="feed">
+{% for item in site.data.testimonials limit:3 %}
+<div class="row">
+<div class="col-3">
+<img src="{{ '/assets/images/clients/' | append: item.thumbnail | prepend: site.baseurl }}" alt="{{ item.thumbnailAlt }}" class="news-image-testimonials">
+</div>
+<div class="col-9">
+<p>{{ item.quote }} - {{ item.name }}</p>
+<p><a href="{{ item.link | prepend: site.baseurl }}">{{ item.role }} at {{ item.organisation }}</a></p>
+</div>
+</div>
+{% endfor %}
+</div>
+</div>

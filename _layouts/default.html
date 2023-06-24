@@ -11,19 +11,40 @@
   <script src="https://cdn.jsdelivr.net/npm/olli-adapters@1"></script>
   
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title> {{   page.title   }}</title>
 
 <!--Custom style sheets-->
-        <link rel="stylesheet" href="{{ '/main.css' | prepend: site.baseurl}}">
+        <link rel="stylesheet" href="{{ '/assets/css/main.css' | prepend: site.baseurl}}">
 
 <!--font awesome icons-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+{% if site.google_analytics and jekyll.environment == 'production' %}
+{% include global/analytics.html %}
+{% endif %}
   </head>
   <body>
-  
-  {{ content }}
-  
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PPHS22H"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column bg-background">
+  <header class="bg-background">
+{% include global/header.html %}
+  </header>
+
+  <main role="main" id="mainContent" class="container bg-background">
+ {{   content   }}
+  </main>
+
+<footer id="footerContent" class="{{ page.backgroundStyle }}">
+{% include global/footer.html version="0" subversion="4" commit="286" %}
+</footer>
+</div>
+{% include global/scripts.html %}
+
   </body>
 </html>

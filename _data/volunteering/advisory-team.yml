@@ -1,0 +1,24 @@
+- name: Robert Cobden
+  title: Mr
+  shortname: Rob
+  role: Systems Advisor
+  contribution: Rob has been a Research Engineer since 2016, at the Sussex Computer-Human Interaction Lab, where Daniel met him. Gradually, Rob became one of Daniel's most trusted friends. Rob is a skilful coder, and maker of things. His role is to review our systems and highlight any inconsistencies or weaknesses.
+  profile: https://www.linkedin.com/in/robcobden/?originalSubdomain=uk
+  photo: /assets/images/team/Rob.jpg
+  alt: Profile picture of Rob.
+- name: Ronald Grau
+  title: Dr
+  shortname: Ron
+  role: Academic Advisor
+  contribution: Ron is a Senior Lecturer in Computer Science at the University of Sussex. His ability to bring clarity to complex projects has always been immensely helpful to Daniel. His role is to give advice on how to build the research pipeline, create academic connections, and apply good science at Project27, .
+  profile: https://profiles.sussex.ac.uk/p171861-ronald-grau
+  photo: /assets/images/team/Ron.jfif
+  alt: Profile picture of Ron.
+- name: Gábor Török
+  title: Mr
+  shortname: Gábor
+  role: Business Advisor
+  contribution: Gabor  studies at the International Business School, while building his own venture. Daniel helped Gabor to study maths, before he swapped the mentee role to an advisory one. His role is to help us build a viable and sustainable business, growing the Project27 community and its impact on people's lives.
+  profile: https://www.linkedin.com/in/gabor-torok-1a900121b/?originalSubdomain=hu
+  photo: /assets/images/team/Gabor.png
+  alt: Gabor is holding a large fish in his hand. A lake and trees are visible in the background.

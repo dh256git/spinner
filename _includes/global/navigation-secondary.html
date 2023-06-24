@@ -1,0 +1,22 @@
+<div class="row {{ page.backgroundStyle }}">
+<div class="col-md-6">
+{% if page.url contains "blog" or page.url contains "cookbook"  or page.url contains "sharing-stories" %}
+{% include global/breadcrumbs-blog.html %}
+{% elsif page.title contains "Home of Project27" %}
+<h1>Welcome to {{ site.brand }}</h1>
+<p>The skill studio for disabled talents.</p>
+{% else %}
+{% include global/breadcrumbs.html %}
+{% endif %}
+</div>
+<div class="col-md-6">
+{% if page.url contains "/blog/" or page.url contains "/guide/" %}
+  <button href="#quickLinks" type="button" class="d-lg-none mysecondarybtn" data-toggle="collapse" data-target="#selector" aria-controls="selector" aria-expanded="false" aria-label="Quick links">
+    <span><i class="fas fa-bookmark fa-lg" aria-hidden="false"></i></span>
+  </button>
+<div class="collapse d-lg-block" id="selector">
+{% include global/select.html %}
+</div>
+{% endif %}
+</div>
+</div>

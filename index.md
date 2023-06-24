@@ -1,32 +1,41 @@
 ---
 layout: default
-title: Project27 Research
+title: Home of Project27
+author: Daniel Hajas
+reviewer: Danielle Garratt
+date: 2022-08-27
+updated: 2023-01-21
+licence: copyright
+buttonStyle: fg-general-land
+backgroundStyle: bg-general-land
+listOfIcons: [["fas fa-pencil-alt", ""], ["fas fa-compass", ""], ["fa-solid fa-handshake", ""], ["fa-solid fa-person-chalkboard", ""]]
 ---
 
-# Welcome to Project27 Research
+## Why trust us
 
-We collaborate with research groups to co-design appropriate academic and innovation projects, which aim to make the lives of disabled people easier, and more enjoyable.
+We help blind or learning disabled people to develop skills that matter.
+{{ site.brand }} reduces the frustration caused by inaccessible learning tools, and builds confidence in your abilities.
+We do this through peer support, personalised opportunities for learning, creating and discovering new challenges in a safe place, built by it's community.
 
-We also do our own research on topics and tools specific to [Project27 Skills.](https://project27skills.com)
+{% include global/cover-image.html image="founders-cover.jpg" alt="Daniel and Danielle are photographed in the UK Parliament. They are wearing smart clothing. A guide dog is sitting in front of them. In the background multiple signs are visible, such as logos of University College London, World Health Organisation, and GDI Hub. Other signs read 'AT changes lives' and 'Launching the Global Report on Assistive Technology'." %}
 
-## Notice!
+{{ site.brand }} is developed by a couple - [Daniel]({% link about/team/Daniel/index.html %}) and [Danielle]({% link about/team/Danielle/index.html %}).
+We draw on our lived experiences and professional skills.
+Daniel is a scientifically-minded blind person, with an interest in social entrepreneurship.
+Danielle is a sociable learning disabled person, with an interest in art, media, gaming, and self-advocacy.
 
-This research site of Project27 is under development.
-Please be forgiving until we create a better user experience.
-We can't wait to showcase all the awesome research we are involved in, in their full glory.
+{% include global/buttonLink.html url="/about/index.html" label="Read more about us" %}
 
-## Portfolio
+{% include global/testimonials.html %}
 
-View our research portfolio.
+---
 
-<select onchange="handleChange(this)">
-<option value="{{ '/project-Olli.html' | prepend: site.baseurl }}" label="Project27.1: Olli">Project27.1: Olli</option>
-<option value="{{ '/project-Anna.html' | prepend: site.baseurl }}" label="Project27.2: Anna">Project27.2: Anna</option>
-</select>
+## What we do
 
-<h3 id="frame-heading">Project27.1: Olli</h3>
+We engage in four key activities to support our mission.
 
-<iframe src="{{ '/project-Olli.html' | prepend: site.baseurl }}" title="Project 27.1: Olli" id="iframe-id" height="500" width="800"></iframe>
+{% assign dataFile = site.data.what-we-do %}
+{% assign gridLimit = 4 %}
+{% include global/grid-generator-2.html heading="h4" %}
 
-<!--script for select pop-up -->
-<script defer src="{{ '/pop-up.js' | prepend: site.baseurl }}"></script>
+{% include spotlight.html %}

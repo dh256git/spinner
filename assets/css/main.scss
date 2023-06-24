@@ -1,0 +1,60 @@
+---
+---
+@import 'bootstrap/bootstrap';
+
+html *
+{
+p {
+   font-size: 1em !important;
+   color: #000 !important;
+   font-family: Helvetica !important;
+   text-align: left;
+}
+ol{
+ text-align: left;
+}
+
+ul {
+   text-align: left;
+ }
+ 
+ li {
+   text-align: left;
+ }
+
+ dl{
+   text-align: left;
+ }
+
+
+h1 {
+   font-size: 2.5em;
+   color: #000;
+   font-family: Charter;
+}
+h2 {
+   font-size: 2.25em !important;
+   color: #000 !important;
+   font-family: Charter !important;
+}
+h3 {
+   font-size: 2.0em !important;
+   color: #000 !important;
+   font-family: Charter !important;
+}
+h4 {
+   font-size: 1.75em !important;
+   color: #000 !important;
+   font-family: Charter !important;
+}
+h5 {
+   font-size: 1.5em !important;
+   color: #000 !important;
+   font-family: Charter !important;
+}
+h6 {
+   font-size: 1.25em !important;
+   color: #000 !important;
+   font-family: Charter !important;
+}
+}

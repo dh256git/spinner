@@ -1,0 +1,23 @@
+---
+layout: default
+title: LogBook
+branch: LogBook
+featured: 
+  - name: Read featured post
+    link: /blog/logbook/dev/2021/10/06/history.html
+switch: 
+  - name: Switch to Twist
+    link: /blog/twist/index.html
+buttonStyle: fg-blog-vol
+backgroundStyle: bg-blog-vol
+listOfIcons: [["", "LaTeX logo.png"], ["", "MathMl.png"], ["fas fa-sitemap", ""], ["fas fa-exclamation-triangle", ""]]
+levelToOpen: category
+---
+<div class="container">
+<h2 id="toc_0">What is logged in the LogBook?</h2>
+
+<p>The LogBook really just logs any troubles, interesting observations, and hopefully solutions related to developing the {{ site.brand }} content. To start with, I'll focus on four topics.</p>
+
+{% assign dataFile = site.data.chapters.logbook %}
+{% assign gridOffset = 2 %}
+{% include global/grid-generator.html heading="h3" %}

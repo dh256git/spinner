@@ -1,0 +1,9 @@
+     <nav class="blog-pagination" aria-label="Blog">
+{% for switcher in page.switch %}
+                <a class="mybtswitch" href="{{ switcher.link | prepend: site.baseurl }}">{{ switcher.name }}</a>
+        <br>
+{% endfor %}
+{%for featured in page.featured %}
+        <a class="mybtswitch" href="{{ featured.link | prepend: site.baseurl }}" tabindex="-1" aria-disabled="false">{{ featured.name }}</a>
+        {% endfor %}
+      </nav>

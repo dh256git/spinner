@@ -1,2 +1,3 @@
-# spinner
-Spinner Group is the home for the Project27 platform. Our mission is to accelerate impact by spinning out research projects, which aim to help blind and learning disabled people.
+# Welcome to the Project27 repository
+
+This is the repository for Project27. This README file explains briefly the structure of the repository.

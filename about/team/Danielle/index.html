@@ -1,0 +1,35 @@
+---
+layout: default
+title: Danielle Garratt
+author: Danielle Garratt
+reviewer: Daniel Hajas
+date: 2022-08-27
+update: 2023-01-20
+buttonStyle: fg-general-chap
+backgroundStyle: bg-general-chap
+listOfIcons: [["", ""], ["", ""]]
+---
+
+{% assign profile = site.data.volunteering.core-team[1] %}
+{% assign profile-sections = site.data.volunteering.danielle %}
+
+<div class="profilecontainertitle">
+<h2>{{ profile.title }} {{ profile.name }}</h2>
+</div>
+<div class="profilecontainer">
+<img src="{{ profile.photo | prepend: site.baseurl }}" class="danielle-profile" alt="{{ profile.alt }}" height="300px" width="200px">
+
+<p>{{ profile.contribution }}</p>
+</div>
+
+<select onchange="handleChange(this)">
+{% for item in profile-sections %}
+<option value="{{ item.value | prepend: site.baseurl }}" label="{{ item.label }}">{{ item.text }}</option>
+{% endfor %}
+</select>
+
+<h3 id="frame-heading">Open letter</h3>
+
+<div class="iframe-container">
+<iframe src="{{ '/about/team/Danielle/introduction.html' | prepend: site.baseurl }}"title="Welcome letter" id="iframe-id" class="responsive-iframe"></iframe>
+</div>

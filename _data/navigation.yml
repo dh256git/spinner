@@ -1,0 +1,12 @@
+- name: Blog
+  link: /blog/index.html
+  description: The blog is a place where we tell our stories, and log the development of Project27. We want to share thoughts on blindness, learning disability, and other topics we find interesting. We do this to be the leading example.
+- name: Guide
+  link: /guide/index.html
+  description: The Guide is a journal of life-long learning. It is a set of guiding notes, written with accessibility in mind. The notes cover topics that matter to us, let it be science, technology, or a matter of lifestyle.
+- name: Volunteering
+  link: /volunteering/index.html
+  description: Volunteering is the way we involve learners of all abilities and skills. Through bespoke tasks and active learning, it is the volunteers who build Project27, while developing skills that matter to them. Together we learn, together we grow.
+- name: Support
+  link: /support/index.html
+  description: We know from experience, written tutorials and guides aren't always enough. Sometimes we just need a little more hands-on support. That's why we come to you, listen to your needs and unique circumstances, and why we want to help.

@@ -1,15 +1,9 @@
-- name: Sharing thoughts - Read our Blog!
+- name: Public engagement - Disseminate your research through our Blog!
   link: /blog/index.html
-  description: We share our lived experience of sight-loss, learning disability, and success, through our blog.
-- name: Passive learning - Study our Guide!
-  link: /guide/index.html
-  description: We enable people to learn about science, technology, and life skills, by creating accessible articles in the Project27 Guide.
-- name: Active learning - Become a volunteer!
-  link: /volunteering/index.html
-  description: We promote active learning by getting volunteers involved in building the Project27 Guide, site, and community.
-- name: Consultancy - Book Support!
-  link: /support/index.html
-  description: Anyone who needs time to talk things through with us can book support, for a session of general consulting, tutoring, or mentoring.
-- name: Research and innovation
-  link: 
-  description: We work with academic researchers and businesses to push the frontiers of access to science, and disability inclusion.
+  description: We help researchers and businesses with disseminating their latest findings on accessibility, and engaging with the public through our blog.
+- name: Co-designing solutions - Validate your research question!
+  link: /for-researchers/index.html
+  description: We enable researchers to understand the real problems blind or learning disabled people experience, through an iterative process of co-design and consultancy, such that the right research questions are addressed.
+- name: Scaling innovation - Be an early adopter!
+  link: /for-businesses/index.html
+  description: We work with businesses to identify opportunities for innovation in accessibility, diffuse the latest research and development outputs, and scale solutions that work for blind or learning disabled people.

@@ -1,12 +1,15 @@
 ---
 layout: default
-title: For businesses
-tagline: Tagline goes here
+title: Innovation
+tagline: Diffusing innovation that works
 author: Daniel Hajas
 reviewer: Danielle Garratt
-date: 2022-10-15
+date: 2023-06-24
 licence: copyright
-announcement: Currently, there are no available sessions to book.
 buttonStyle: fg-general-vol
 backgroundStyle: bg-general-vol
 ---
+
+## {{ page.title }}: {{ page.tagline }}
+
+We partner with businesses to diffuse innovation that works.

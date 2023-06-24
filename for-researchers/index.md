@@ -1,11 +1,15 @@
 ---
 layout: default
-title: For researchersVolunteering
-tagline: Tagline goes here
+title: Research
+tagline: Co-designing solutions for the real problems
 author: Daniel Hajas
 reviewer: Danielle Garratt
-date: 2022-10-02
+date: 2023-06-24
 licence: copyright
 buttonStyle: fg-general-vol
 backgroundStyle: bg-general-vol
 ---
+## {{ page.title }}: {{ page.tagline }}
+
+We partner with researchers to co-design solutions to the real problems.
+

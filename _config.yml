@@ -23,5 +23,6 @@ include:
 # baseurl: /project27
 baseurl:
 excerpt_separator: <!-- excerpt-end -->
-brand: Project27
+organisation: Project27 Consultancy Group
+brand: Project27 Solutions
 motto: Solutions that work

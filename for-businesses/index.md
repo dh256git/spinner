@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Innovation
+title: Business
 tagline: Diffusing innovation that works
 author: Daniel Hajas
 reviewer: Danielle Garratt

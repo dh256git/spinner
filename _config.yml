@@ -24,5 +24,6 @@ include:
 baseurl:
 excerpt_separator: <!-- excerpt-end -->
 organisation: Project27 Consultancy Group
+org: PCG
 brand: Project27 Solutions
 motto: Solutions that work

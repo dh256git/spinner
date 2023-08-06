@@ -10,9 +10,9 @@ backgroundStyle: bg-general-land
 listOfIcons: [["fas fa-pencil-alt", ""], ["fas fa-compass", ""], ["fa-solid fa-handshake", ""], ["fa-solid fa-person-chalkboard", ""]]
 ---
 
-## Why trust us with your research and innovation?
+## Why trust us with your research and innovation
 
-Because we are trustworthy. Insert value proposition here.
+Insert value proposition here.
 
 {% include global/cover-image.html image="founders-cover.jpg" alt="Daniel and Danielle are photographed in the UK Parliament. They are wearing smart clothing. A guide dog is sitting in front of them. In the background multiple signs are visible, such as logos of University College London, World Health Organisation, and GDI Hub. Other signs read 'AT changes lives' and 'Launching the Global Report on Assistive Technology'." %}
 
@@ -27,7 +27,7 @@ Danielle is a sociable learning disabled person, with an interest in art, media,
 
 ---
 
-## What we do?
+## What we do
 
 {{ site.brand }} is the research and innovation arm of the {{ site.organisation }}.
 We work in partnership with researchers and businesses interested in disability inclusion.
@@ -41,6 +41,4 @@ We work in partnership with researchers and businesses interested in disability 
 Check out [Project27 Skills](https://project27skills.com/), the talent arm of {{ site.organisation }}.
 We create personalised opportunities for skills development in a safe environment for communities of blind or learning disabled people.
 
-### What's new?
-
-Insert news feed here.
+{% include blog/spotlight.html %}

@@ -1,12 +1,18 @@
-- name: Twitter
+- name: Facebook
+  link: https://www.facebook.com/profile.php?id=100095492140913
+  icon: /assets/images/icons/facebook.png
+- name: X
   link: https://www.twitter.com/project27skills/
-  icon: /assets/images/icons/twitter.png
-- name: Mastodon
-  link: /404.html
-  icon: /assets/images/icons/mastodon.jpg
+  icon: /assets/images/icons/x.png
 - name: LinkedIn
-  link: /404.html
+  link: https://www.linkedin.com/company/project27-consultancy-group/
   icon: /assets/images/icons/linkedin.png
 - name: YouTube
   link: https://youtube.com/@project27skills
   icon: /assets/images/icons/youtube.jpg
+- name: Instagram
+  link: https://www.instagram.com/project27skills/
+  icon: /assets/images/icons/instagram.png
+- name: Mastodon
+  link: https://dragonscave.space/@daniel/
+  icon: /assets/images/icons/mastodon.jpg

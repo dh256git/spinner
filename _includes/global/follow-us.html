@@ -1,9 +1,12 @@
 <div class="row">
-{% for item in site.data.social-side %}
+{% for item in site.data.social-side limit: 4 %}
     <div class="col-md-3">
     <a href="{{ item.link }}">
     <img src="{{ item.icon }}" alt="{{ item.name }}" class="img-follow-us-new">
     </a>
     </div>
 {% endfor %}
+<p>
+Check out other ways to follow us, on our <a href="{{ '/contact/index.html' | prepend: site.baseurl }}">contact page.</a>
+</p>
     </div>

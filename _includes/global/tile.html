@@ -1,11 +1,13 @@
       <{{ include.heading }}>Project {{ item.name }}</{{ include.heading }}>
 {% if page.listOfIcons[loopIndex][0] == "" %}
-<img src="{{ '/assets/images/' | prepend: site.baseurl }}{{ page.listOfIcons[loopIndex][1] }}" aria-hidden="false" alt="The {{ item.name }} logo" width="45px">
+<img src="{{ '/assets/images/' | prepend: site.baseurl }}{{ page.listOfIcons[loopIndex][1] }}" aria-hidden="false" alt="{{ page.listOfIcons[loopIndex][2] }}" width="45px">
 {% else %}
 <i class="{{ page.listOfIcons[loopIndex][0] }} fa-lg" aria-hidden="true"></i>
 {% endif %}
 
       <p>{{ item.description }}</p>
+
+{% include tabs-for-projects.html %}
 
       <a target="_blank" rel="noopener noreferrer" class="{{ page.buttonStyle }}" href="{{ item.link | prepend: site.baseurl }}">
 {% if item.buttonLabel %}      

@@ -1,0 +1,49 @@
+<div role='tablist'>
+  <button role='tab' id='tab-demo' aria-controls='tabpanel-demo' onClick="setTab('demo')">Demo</button>
+  <button role='tab' id='tab-publications' aria-controls='tabpanel-publications' onClick="setTab('publications')">Publications</button>
+  <button role='tab' id='tab-media' aria-controls='tabpanel-media' onClick="setTab('media')">Media</button>
+  <button role='tab' id='tab-blog' aria-controls='tabpanel-blog' onClick="setTab('blog')">Blog</button>
+</div>
+
+<div role='tabpanel' id='tabpanel-demo' aria-labelledby='tab-demo'>
+  {% include demo-for-Olli.html %}
+</div>
+<div role='tabpanel' id='tabpanel-publications' aria-labelledby='tab-publications'>
+  This is where the list of publications go.
+</div>
+<div role='tabpanel' id='tabpanel-media' aria-labelledby='tab-media'>
+  This is where the list of media items go.
+</div>
+<div role='tabpanel' id='tabpanel-blog' aria-labelledby='tab-blog'>
+  This is where related blog posts are listed.
+</div>
+
+<script>
+
+  setTab('demo');
+
+  function setTab(tabName) {
+    console.log(tabName);
+    const allTabButtons = document.querySelectorAll('button[role=tab]');
+
+    const tabButtonId = 'tab-' + tabName;
+    const selectedTabButton = document.getElementById(tabButtonId);
+
+    allTabButtons.forEach((tabButton) => {
+      tabButton.setAttribute('aria-selected', false);
+    });
+    selectedTabButton.setAttribute('aria-selected', true);
+
+    const allTabPanels = document.querySelectorAll('[role=tabpanel]');
+
+    const tabPanelId = 'tabpanel-' + tabName;
+    const selectedTabPanel = document.getElementById(tabPanelId);
+
+    allTabPanels.forEach((tabPanel) => {
+      tabPanel.setAttribute('hidden', true);
+    });
+    selectedTabPanel.removeAttribute('hidden');
+
+    console.log(tabName, selectedTabButton, selectedTabPanel)
+  }
+</script>

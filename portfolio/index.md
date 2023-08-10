@@ -8,7 +8,7 @@ date: 2023-06-24
 licence: copyright
 buttonStyle: fg-guide-land
 backgroundStyle: bg-guide-land
-listOfIcons: ["", "olli-logo.png"]
+listOfIcons: [["", "olli-logo.png", "The Olli logo"]]
 ---
 
 ## {{ page.title }}: {{ page.tagline }}

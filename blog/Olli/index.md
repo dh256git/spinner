@@ -1,8 +1,22 @@
+---
+layout: default
+title: Olli archive
+author: Daniel Hajas
+reviewer: Danielle Garratt
+date: 2023-06-24
+licence: copyright
+buttonStyle: fg-blog-land
+backgroundStyle: bg-blog-land
+---
+
+## {{ page.title }}
+
+Find all the knowledge exchange posts related to project Olli in one simple feed below.
+
 <div id="spotlight" class="spotlight">
-<h2>Knowledge exchange feed</h2>
 <div class="featured-feed">
-{% for post in site.posts limit:3 %}
-{% if post.url contains "blog/" %}
+{% for post in site.posts %}
+{% if post.tag == "Olli" %}
 <div class="row">
 <div class="col-3">
 {% if post.image %}
@@ -19,5 +33,4 @@
 {% endif %}
 {% endfor %}
 </div>
-{% include global/buttonLink.html url="/blog/index.html" label="Browse the knowledge exchange archive" %}
 </div>

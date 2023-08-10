@@ -1,9 +1,8 @@
 ---
 layout: post
 author: Daniel
-title: Issue tracking - An introduction to the category
-branch: LogBook
-tag: Issue tracking
+title: Issue tracking and the roadmap at Project27
+tag: General
 buttonStyle: fg-blog-sect
 backgroundStyle: bg-blog-sect
 ---

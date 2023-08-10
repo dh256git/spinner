@@ -1,4 +1,4 @@
-      <{{ include.heading }}>Project {{ item.name }}</{{ include.heading }}>
+      <{{ include.heading }}>{{ item.name }}</{{ include.heading }}>
 {% if page.listOfIcons[loopIndex][0] == "" %}
 <img src="{{ '/assets/images/' | prepend: site.baseurl }}{{ page.listOfIcons[loopIndex][1] }}" aria-hidden="false" alt="{{ page.listOfIcons[loopIndex][2] }}" width="45px">
 {% else %}
@@ -7,7 +7,7 @@
 
       <p>{{ item.description }}</p>
 
-{% include tabs-for-projects.html %}
+{% include projects/tabs-for-projects.html %}
 
       <a target="_blank" rel="noopener noreferrer" class="{{ page.buttonStyle }}" href="{{ item.link | prepend: site.baseurl }}">
 {% if item.buttonLabel %}      

@@ -9,6 +9,7 @@ licence: copyright
 buttonStyle: fg-guide-land
 backgroundStyle: bg-guide-land
 listOfIcons: [["", "olli-logo.png", "The Olli logo"]]
+burndownData: /portfolio/current-sprint.csv
 ---
 
 ## {{ page.title }}: {{ page.tagline }}

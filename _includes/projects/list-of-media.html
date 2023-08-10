@@ -1,0 +1,15 @@
+<h4>Media content</h4>
+<p>
+Check out the list of media content related to this project.
+</p>
+
+{% assign mediaList = site.data.media %}
+<ul>
+{% for media in mediaList %}
+<li>
+<a target="_blank" rel="noopenner noreferrer" href="{{ media.link }}">
+{{ media.publisher }}: {{ media.title }}
+</a>
+</li>
+{% endfor %}
+</ul>

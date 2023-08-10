@@ -1,0 +1,15 @@
+<h4>List of publications</h4>
+<p>
+Check out the list of publications related to this project.
+</p>
+
+{% assign publicationsList = site.data.publications %}
+<ul>
+{% for publication in publicationsList %}
+<li>
+<a target="_blank" rel="noopenner noreferrer" href="{{ publication.link }}">
+{{ publication.title }}
+</a>
+</li>
+{% endfor %}
+</ul>

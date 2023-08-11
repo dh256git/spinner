@@ -6,23 +6,15 @@ about:
   - name: Contact us and FAQs
     link: /contact/index.html
 productsAndServices:
-  - name: Become a volunteer
-    link: /volunteering/become-a-volunteer.html
-  - name: Book a support session
-    link: /support/index.html
-  - name: Pricing
-    link: /support/pricing.html
-media:
-  - name: News
-    link: /about/news.html
-  - name: Posts
-    link: /blog/all-posts.html
+  - name: Knowledge exchange
+    link: /blog/index.html
+  - name: Research inquiries
+    link: /for-researchers/index.html
+  - name: Innovation inquiries
+    link: /for-businesses/index.html
+Demo space:
+  - name: Olli
+    link: https://mitvis.github.io/olli/
 development:
-  - name: Roadmap
-    link: /blog/logbook/dev/change-log.html
-  - name: Issue tracking
-    link: /blog/logbook/issues/2020/06/05/initialise.html
   - name: Git Hub
-    link: https://github.com/dh256git/project27
-  - name: Surge
-    link: http://p27skills.surge.sh
+    link: https://github.com/dh256git/spinner

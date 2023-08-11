@@ -22,9 +22,9 @@
   </div>
 </div>
 <div class="dropdown bg-my-nav">
-<button type="button" class="mybtnswitch" data-toggle="collapse" data-target="#media" aria-haspopup="true">Media</button>
+<button type="button" class="mybtnswitch" data-toggle="collapse" data-target="#media" aria-haspopup="true">Demo space</button>
         <div class="dropdown-menu" id="media">
-  {% for item in site.data.quick-links-side["media"] %}
+  {% for item in site.data.quick-links-side["Demo space"] %}
           <a class="dropdown-item" href= "{{ item.link | prepend: site.baseurl }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
   {% endfor %}
 </div>

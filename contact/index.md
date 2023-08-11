@@ -71,6 +71,9 @@ We were asked the following questions many times. See what we usually say.
 <dl>
 {% for item in site.data.FAQ %}
 <dt>Q: {{ item.question }}</dt>
-<dd>A: {{ item.answer }}</dd>
+<dd>
+A: {{ item.answer }} 
+<a target="_blank" rel="noopenner noreferrer" href="{{ item.answerLink }}">Read more</a>
+</dd>
 {% endfor %}
 </dl>

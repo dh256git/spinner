@@ -15,10 +15,10 @@ We enable researchers to understand the real problems blind or learning disabled
 
 ### Build your next research project on the foundations of co-design!
 
-Formative and evaluative studies are necessary, but not sufficient for researching and designing solutions that work.
-Share a brief of your next research proposal and talk to us to find out how can co-design activities fit with your research question and methodology.
+Send us a research inquiry to find out how can co-design activities fit with your research project.
 
-INSERT FORM HERE.
+<div class="iframe-container">
+<iframe class="responsive-iframe" title="Research inquiries" src="https://docs.google.com/forms/d/e/1FAIpQLSfa2LUqqH4CkgtfpKWYQDOgYHU0u5Q2HsdzRuCbprSvy9mzMA/viewform?embedded=true" width="640" height="890" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></div>
 
 ---
 

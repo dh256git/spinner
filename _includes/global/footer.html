@@ -37,7 +37,7 @@
 </a>
 </p>
 {% endfor %}
-<p><a href="{{ '/blog/logbook/dev/change-log.html' | prepend: site.baseurl }}">Version: {{ include.version }}.{{ include.subversion }}.{{ include.commit }}.</a></p>
+
 <p onclick="showTimeLastUpdated()">Last updated: 
 <span id="time-last-updated-show">{{ site.time | date_to_rfc822 | date: "%d %b %Y" }}.</span>
 <span id="time-last-updated-hide" class="hidden-text">{{ site.time | date_to_rfc822 | date: "%H:%M" }}.</span>

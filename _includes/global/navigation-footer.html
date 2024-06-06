@@ -1,9 +1,0 @@
-      <nav class="navbar navbar-expand-md navbar-dark bg-nav-footer" tabindex="0" aria-label="Footer">
-<ul class="navbar-nav" role="menubar">
-  {% for item in site.data.navigation-footer %}
-  <li>
-    <a href="{{ item.link | prepend: site.baseurl }}">{{ item.name }}</a>
-  </li>
-  {% endfor %}
-  </ul>
-</nav>

@@ -1,16 +1,25 @@
 <!doctype html>
 <html lang="en">
-  <head>
-  
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/custom/style.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/custom/easyread.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="{{ site.baseurl }}/">Log out</a>
+      <a href="#" id="easyread-button" class="button">Easy Read</a>
+    </nav>
+  </header>
+  {{ content }}
+  <footer>
+    <!-- Footer content -->
+  </footer>
 
-    <title> {{   page.title   }}</title>
-
-  </head>
-  <body>
-
-{{ content }}
-
-  </body>
+  <script src="{{ '/assets/javascript/toggleEasyRead.js' | relative_url }}"></script>
+</body>
 </html>

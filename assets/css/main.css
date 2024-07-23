@@ -1,0 +1,56 @@
+html *
+{
+p {
+   font-size: 1em !important;
+   color: #000 !important;
+   font-family: Helvetica !important;
+   text-align: left;
+}
+ol{
+ text-align: left;
+}
+
+ul {
+   text-align: left;
+ }
+ 
+ li {
+   text-align: left;
+ }
+
+ dl{
+   text-align: left;
+ }
+
+
+h1 {
+   font-size: 1.7em !important; 
+   color: #000 !important;
+   font-family: Charter !important;
+}
+h2 {
+   font-size: 1.5em !important;
+   color: #000 !important;
+   font-family: Charter !important;
+}
+h3 {
+   font-size: 1.3em !important;
+   color: #000 !important;
+   font-family: Charter !important;
+}
+h4 {
+   font-size: 1.2em !important;
+   color: #000 !important;
+   font-family: Charter !important;
+}
+h5 {
+   font-size: 1.1em !important;
+   color: #000 !important;
+   font-family: Charter !important;
+}
+h6 {
+   font-size: 1.0em !important;
+   color: #000 !important;
+   font-family: Charter !important;
+}
+}

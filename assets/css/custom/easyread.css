@@ -1,0 +1,25 @@
+body.easyread {
+  font-size: 1.5em; /* Increase font size */
+  line-height: 1.6; /* Increase line spacing */
+  background-color: #f5f5f5; /* Light background for better contrast */
+  color: #333; /* Dark text for better readability */
+}
+
+header.easyread, nav.easyread, footer.easyread {
+  background-color: #e0e0e0; /* Light background for header, nav, footer */
+  color: #000; /* Dark text */
+}
+
+.easyread a {
+  color: #0066cc; /* High contrast link color */
+  text-decoration: underline; /* Underline links */
+}
+
+.easyread p {
+  margin-bottom: 1.5em; /* Increase spacing between paragraphs */
+}
+
+/* Hide main text when easy read mode is not active */
+.hidden {
+  display: none;
+}

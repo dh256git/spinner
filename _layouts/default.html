@@ -11,8 +11,14 @@
 <body>
   <header>
     <nav>
+{% if page.layout == "login" %}
+      <a href="https://project27skills.com/">Project27 Skills</a>
+      <a href="#" id="easyread-button" class="button">Easy Read</a>
+{% else %}
+      <a href="{{ site.baseurl }}/general/index.html">Home</a>
       <a href="{{ site.baseurl }}/">Log out</a>
       <a href="#" id="easyread-button" class="button">Easy Read</a>
+      {% endif %}
     </nav>
   </header>
   {{ content }}

@@ -1,18 +1,72 @@
 ---
+permalink: welcome
 layout: default
-title: Welcome letter
+title: Welcome to Project27
+version: full
 ---
+
+{% capture welcome-letter-email %}
+Dear guest,
+
+Congratulations! We reviewed your application to join the Project27 community, and we would like to invite you to become a guest member.
+
+Are you looking forward to beginning your personal and professional growth journey with us?
+If the answer is yes, start your onboarding journey today, in three easy steps.
+
+1. View the [onboarding schedule](https://community.project27skills.com/general/onboarding-schedule.html) to find out what to expect.
+2. Schedule your [Introduction meeting](https://calendly.com/dh256/onboarding-project27-community) with the Project27 Co-founders.
+3. Get excited!
+
+You can also login to the Project27 Community workspace to view this welcome letter in full, view your member certificates, and give us feedback.
+
+- Community workspace: https://community.project27skills.com
+- Your username: admin
+- Your password: password
+
+If you have any questions, do not hesitate to reply to this email.
+
+Yours faithfully,  
+
+Daniel & Danielle - The Project27 Co-Founders
+{% endcapture %}
+{% capture welcome-letter-full %}
+Dear guest,
+
+Congratulations! We reviewed your application to join the Project27 community, and we would like to invite you to become a guest member.
+
+Are you looking forward to beginning your personal and professional growth journey with us?
+If the answer is yes, start your onboarding journey today, in three easy steps.
+
+1. View the [onboarding schedule]({% link general/onboarding-schedule.html %}) to find out what to expect.
+2. Schedule your [Introduction meeting](https://calendly.com/dh256/onboarding-project27-community) with the Project27 Co-founders.
+3. Get excited!
+
+### A note of thank you
+
+Until your first meeting with us, we wanted to share a short note of appreciation with you.
+
+Thank you for expressing interest in joining our community.
+Getting community members involved in project-based learning and mutual mentorship is how we can make a difference.
+
+We envision a world where everyone has the opportunity for social and economic participation, ensuring that disabled individuals are included and benefit from personal and professional growth.
+Our mission is to create personalised opportunities for skills development and pathways for personal and professional growth in a safe environment for communities of blind and learning disabled individuals.
+
+By making a commitment to becoming a trainee or a volunteer member, you will make our vision come true.
+For that, we would like to thank you, and we wish you a joyful onboarding.
+
+Yours faithfully,  
+
+Daniel & Danielle - The Project27 Co-Founders
+{% endcapture %}
+
 <main>
+<h1>{{ page.title }}</h1>
     <section class="main-content">
-<h1>Welcome to Project27</h1>
-
-<p>Dear 
-Welcome to Project27, 
-This letter is to let you know that you have been accepted as a guest of Project27.  What’s going to happen in the next four weeks. The first week will be introductions and welcoming you to Project27. In the second week we will be meeting your team leader. The third week you will be picking your first task that you will be working on with your team leader and finally the fourth week is a feedback and transition stage where you get to choose if you would like to carry on or step back from Project27. 
-We will be scheduling a call with you for the first week in the next few days if not already and we will begin the journey. </p>
-<p>Yours faithfully </p> 
-<p>The Project27 Co-founders </p>
-
+{% if page.version == "email" %}
+{{ welcome-letter-email | markdownify }}
+{% else %}
+{{ welcome-letter-full | markdownify }}
+{% endif %}
 </section>
 
 <section class="easyread hidden">

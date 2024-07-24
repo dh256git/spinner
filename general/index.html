@@ -1,27 +1,51 @@
 ---
 layout: default
-title: Home
+title: Home - Project27 Community
 ---
 
-<div id="welcome-message"></div>
 <main>
-  <section class="main-content">
-    <p>This is a space where you can view your profile of our onboarding schedule, our ways of working, your welcome letter, your certifications and many more things.</p>
+<h1 id="welcome-message"></h1>
 
-    <h2>Onboarding schedule</h2>
-    <p> Onboarding schedule tells you about how the first four weeks will be and how we will work together.</p>
-    <a href="onboarding-schedule.html" class="fg-general-land">find out more</a>
-    
-    <h2>Ways of working</h2>
-    <p>In the ways of working this explains how Project27 works and how what we use.</p>
-    <a href="ways-of-working.html" class="fg-general-land">find out more</a>
-    
-    <h2>Welcome letter</h2>
-    <p>The</p>
-    <a href="/profile/welcome-letter.html" class="fg-general-land">read the welcome letter here</a>
-    
-    <h2>Certification</h2>
-    <a href="/profile/certification.html" class="fg-general-land">take a look at your certifications here</a>
+<p>
+Your onboarding journey begins here. If this is your first time logging in, please take a moment to read your welcome letter.
+</p>
+
+<a href="{{ '/welcome' | prepend: site.baseurl }}" class="">Open my welcome letter</a>
+
+{% capture main-content %}
+## Community resources
+
+This is your workspace, where you can find a growing list of onboarding tools and community resources.
+You can schedule meetings, view your onboarding plan, read our ways of working, and give us feedback on your guest experience.
+This is also where you can access your membership documents, such as your welcome letter and member certificates.
+
+### [Schedule meeting](https://calendly.com/dh256/onboarding-project27-community)
+
+Scheduling an onboarding meeting is only a few clicks away.
+Check your onboarding schedule to find out which is your first meeting, then go ahead and make a booking.
+
+### [Onboarding schedule](onboarding-schedule.html)
+
+Take a look at what to expect during your onboarding journey.
+The schedule includes checklists of meetings to attend, tools to get familiar with, materials to read, and tasks to complete.
+
+### [Ways of working](ways-of-working.html)
+
+Read our ways of working guide to learn about the tools we use to stay organised, the processes we follow to break down complex projects into simple tasks, and the ways we work together as small teams in a larger community.
+
+### [My certificates](/certificates)
+
+You can view all your certificates in one place.
+Unlock new certification levels each time you achieve your next milestone.
+
+### [Feedback and transition](https://docs.google.com/forms/d/e/1FAIpQLSeSHOi2oAQI-QBnDZw39-hop7ux-ds2ughIqvfvAqA7ZObi6g/viewform?embedded=true)
+
+Give us feedback at the end of your onboarding journey about your guest experience.
+In this form, you can also let us know whether you wish to proceed with becoming a registered member.
+{% endcapture %}
+
+  <section class="main-content">
+{{ main-content | markdownify }}
 </section>
 
 <section class="easyread hidden">

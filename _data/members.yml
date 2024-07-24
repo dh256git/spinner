@@ -1,0 +1,49 @@
+Daniel:
+
+  - name: Daniel Hajas
+    type: trainee
+    certificates:
+
+      - title: Guest member - View your welcome letter
+        link: /welcome
+        achieved: true
+      - title: Registered member
+        link: /registered-member
+        achieved: false
+      - title: Apprentice certification
+        link: 
+        achieved: false
+      - title: Intern certification
+        link: welcome
+        achieved: false
+      - title: Specialist certification
+        link: 
+        achieved: false
+      - title: Fellow certification
+        link: 
+        achieved: false
+
+Danielle:
+
+  - name: Danielle Garratt
+    type: volunteer
+    certificates:
+
+      - title: Guest member - View your welcome letter
+        link: /welcome
+        achieved: true
+      - title: Registered member
+        link: /registered-member
+        achieved: true
+      - title: Apprentice certification
+        link: 
+        achieved: false
+      - title: Intern certification
+        link: welcome
+        achieved: false
+      - title: Specialist certification
+        link: 
+        achieved: false
+      - title: Fellow certification
+        link: 
+        achieved: false

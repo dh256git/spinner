@@ -6,8 +6,6 @@ version: email
 ---
 
 {% capture farewell-letter-email %}
-Dear guest,
-
 Thank you for completing the feedback and progression form at the end of your onboarding journey.
 
 We are sorry to see that you no longer wish to be a member of our community.
@@ -32,6 +30,7 @@ Daniel & Danielle - The Project27 Co-Founders
 <h1>{{ page.title }}</h1>
     <section class="main-content">
 {% if page.version == "email" %}
+<p id="greeting"></p>
 {{ farewell-letter-email | markdownify }}
 {% else %}
 {{ farewell-letter-full | markdownify }}
@@ -54,3 +53,18 @@ Daniel & Danielle - The Project27 Co-Founders
 <p>The Project27 organizers </p>
 </section>
 </main>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Retrieve the username from localStorage
+    const username = localStorage.getItem('username');
+
+    if (username) {
+      // Display the personalised greeting if the username exists
+      document.getElementById('greeting').textContent = `Dear ${username},`;
+    } else {
+      // Redirect to login page if no username found
+      document.getElementById('greeting').textContent = `Dear guest,`;
+    }
+  });
+</script>

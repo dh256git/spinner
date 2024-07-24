@@ -1,13 +1,11 @@
 ---
 permalink: welcome
 layout: default
-title: Welcome to Project27
+title: Welcome letter
 version: full
 ---
 
 {% capture welcome-letter-email %}
-Dear guest,
-
 Congratulations! We reviewed your application to join the Project27 community, and we would like to invite you to become a guest member.
 
 Are you looking forward to beginning your personal and professional growth journey with us?
@@ -30,8 +28,6 @@ Yours faithfully,
 Daniel & Danielle - The Project27 Co-Founders
 {% endcapture %}
 {% capture welcome-letter-full %}
-Dear guest,
-
 Congratulations! We reviewed your application to join the Project27 community, and we would like to invite you to become a guest member.
 
 Are you looking forward to beginning your personal and professional growth journey with us?
@@ -63,8 +59,10 @@ Daniel & Danielle - The Project27 Co-Founders
 <h1>{{ page.title }}</h1>
     <section class="main-content">
 {% if page.version == "email" %}
+<p id="greeting"></p>
 {{ welcome-letter-email | markdownify }}
 {% else %}
+<p id="greeting"></p>
 {{ welcome-letter-full | markdownify }}
 {% endif %}
 </section>
@@ -85,3 +83,18 @@ Daniel & Danielle - The Project27 Co-Founders
 <p>The Project27 organizers </p>
 </section>
 </main>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Retrieve the username from localStorage
+    const username = localStorage.getItem('username');
+
+    if (username) {
+      // Display the personalised greeting if the username exists
+      document.getElementById('greeting').textContent = `Dear ${username},`;
+    } else {
+      // Redirect to login page if no username found
+      document.getElementById('greeting').textContent = `Dear guest,`;
+    }
+  });
+</script>

@@ -24,8 +24,17 @@ Please login to view our community resources, such as the onboarding schedule, a
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
 
-    // Simple client-side authentication (not secure, for demo purposes)
-    if (username === 'admin' && password === 'password') {
+    // List of valid users (for demo purposes, not secure)
+    const users = [
+      { username: 'Admin', password: 'Password27' },
+      { username: 'Danielle', password: 'Garratt' },
+      { username: 'Daniel', password: 'Hajas' }
+    ];
+
+    // Check if the provided username and password match any user in the list
+    const user = users.find(user => user.username === username && user.password === password);
+
+    if (user) {
       alert('Login successful!');
       // Store the username in localStorage
       localStorage.setItem('username', username);

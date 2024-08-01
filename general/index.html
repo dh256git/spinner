@@ -12,13 +12,13 @@ Your onboarding journey begins here. If this is your first time logging in, plea
 
 <a href="{{ '/welcome' | prepend: site.baseurl }}" class="">Open my welcome letter</a>
 
-{% capture main-content %}
-## Community resources
-
+<p>
 This is your workspace, where you can find a growing list of onboarding tools and community resources.
 You can schedule meetings, view your onboarding plan, read our ways of working, and give us feedback on your guest experience.
 This is also where you can access your membership documents, such as your welcome letter and member certificates.
+</p>
 
+{% capture main-content %}
 ### [Schedule meeting](https://calendly.com/dh256/onboarding-project27-community)
 
 Scheduling an onboarding meeting is only a few clicks away.
@@ -33,11 +33,6 @@ The schedule includes checklists of meetings to attend, tools to get familiar wi
 
 Read our ways of working guide to learn about the tools we use to stay organised, the processes we follow to break down complex projects into simple tasks, and the ways we work together as small teams in a larger community.
 
-### [My certificates](/certificates)
-
-You can view all your certificates in one place.
-Unlock new certification levels each time you achieve your next milestone.
-
 ### [Feedback and transition](https://docs.google.com/forms/d/e/1FAIpQLSeSHOi2oAQI-QBnDZw39-hop7ux-ds2ughIqvfvAqA7ZObi6g/viewform?embedded=true)
 
 Give us feedback at the end of your onboarding journey about your guest experience.
@@ -45,7 +40,31 @@ In this form, you can also let us know whether you wish to proceed with becoming
 {% endcapture %}
 
   <section class="main-content">
+
+<h2>Personal space</h2>
+
+<p>
+View content that's only yours.
+</p>
+
+<h3>
+<a id="profileLink" href="#">
+My certificates
+</a>
+</h3>
+
+<p>
+You can view all your certificates in one place.
+Unlock new certification levels each time you achieve your next milestone.
+</p>
+
+<h2>Community resources</h2>
+
+<p>
+View and use resources available to everyone in our community.
+<p>
 {{ main-content | markdownify }}
+
 </section>
 
 <section class="easyread hidden">
@@ -85,3 +104,21 @@ In this form, you can also let us know whether you wish to proceed with becoming
     }
   });
 </script>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Step 1: Retrieve the value from local storage
+    const username = localStorage.getItem('username');
+
+      if (username) {
+        // Step 2: Construct the URL
+        var baseUrl = '/profile/';
+        var profileUrl = baseUrl + encodeURIComponent(username) + '/index.html';
+
+        // Step 3: Set the href attribute of the link
+        var profileLink = document.getElementById('profileLink');
+        profileLink.href = profileUrl;
+      }
+    });
+  </script>

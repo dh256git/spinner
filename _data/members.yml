@@ -2,24 +2,40 @@ Daniel:
 
   - name: Daniel Hajas
     type: trainee
+    level: apprentice
+    team: web design
     certificates:
 
-      - title: Guest member - View your welcome letter
+      - title: Guest member
+        instruction: View your welcome letter
         link: /welcome
         achieved: true
       - title: Registered member
-        link: /registered-member
-        achieved: false
+        instruction: Complete onboarding to unlock this certificate
+        link: /profile/Daniel/registered-member-certificate
+        achieved: true
       - title: Apprentice certification
+        instruction: Complete 4 tasks within 1 month to unlock this certificate
         link: 
         achieved: false
       - title: Intern certification
-        link: welcome
+        instruction: Complete 16 tasks within 1 month to unlock this certificate
+        link:
         achieved: false
       - title: Specialist certification
+        instruction: Complete 48 tasks within 3 months to unlock this certificate
         link: 
         achieved: false
       - title: Fellow certification
+        instruction: Complete 100 tasks within 12 month to unlock this certificate
+        link: 
+        achieved: false
+      - title: Team leader certification
+        instruction: Lead a team for 3 months, with 8 hours commitment each week. Lived experience of disability required. 
+        link: 
+        achieved: false
+      - title: Industry professional certification
+        instruction: Advise a team for 3 months, with a minimum of 2 hours commitment each week. Industry experience required.
         link: 
         achieved: false
 
@@ -27,23 +43,80 @@ Danielle:
 
   - name: Danielle Garratt
     type: volunteer
+    level: team leader
+    team: visual media
     certificates:
 
-      - title: Guest member - View your welcome letter
+      - title: Guest member
+        instruction: View your welcome letter
         link: /welcome
         achieved: true
       - title: Registered member
-        link: /registered-member
+        instruction: Complete onboarding to unlock this certificate
+        link: /profile/Danielle/registered-member-certificate
         achieved: true
       - title: Apprentice certification
+        instruction: Complete 4 tasks within 1 month to unlock this certificate
         link: 
         achieved: false
       - title: Intern certification
-        link: welcome
+        instruction: Complete 16 tasks within 1 month to unlock this certificate
+        link:
         achieved: false
       - title: Specialist certification
+        instruction: Complete 48 tasks within 3 months to unlock this certificate
         link: 
         achieved: false
       - title: Fellow certification
+        instruction: Complete 100 tasks within 12 month to unlock this certificate
+        link: 
+        achieved: false
+      - title: Team leader certification
+        instruction: Lead a team for 3 months, with 8 hours commitment each week. Lived experience of disability required. 
+        link: /profile/Danielle/team-leader-certificate
+        achieved: true
+      - title: Industry professional certification
+        instruction: Advise a team for 3 months, with a minimum of 2 hours commitment each week. Industry experience required.
+        link: 
+        achieved: false
+
+Harpreet:
+
+  - name: Harpreet M
+    type: volunteer
+    level: industry professional
+    team: web design
+    certificates:
+
+      - title: Guest member
+        instruction: View your welcome letter
+        link: /welcome
+        achieved: true
+      - title: Registered member
+        instruction: Complete onboarding to unlock this certificate
+        link: /registered-member
+        achieved: false
+      - title: Apprentice certification
+        instruction: Complete 4 tasks within 1 month to unlock this certificate
+        link: 
+        achieved: false
+      - title: Intern certification
+        instruction: Complete 16 tasks within 1 month to unlock this certificate
+        link:
+        achieved: false
+      - title: Specialist certification
+        instruction: Complete 48 tasks within 3 months to unlock this certificate
+        link: 
+        achieved: false
+      - title: Fellow certification
+        instruction: Complete 100 tasks within 12 month to unlock this certificate
+        link: 
+        achieved: false
+      - title: Team leader certification
+        instruction: Lead a team for 3 months, with 8 hours commitment each week. Lived experience of disability required. 
+        link: /team-leader
+        achieved: false
+      - title: Industry professional certification
+        instruction: Advise a team for 3 months, with a minimum of 2 hours commitment each week. Industry experience required.
         link: 
         achieved: false

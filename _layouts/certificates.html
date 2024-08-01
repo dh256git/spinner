@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+{% assign url_segments = page.url | split: '/' %}
+{% assign member = url_segments[2] %}
+
+<h1>{{ member }}'s certificates</h1>
+
+<p>
+You are unstoppable, {{ member }}! View the list of certificates you have unlocked so far. For more details on certifications, please visit our <a target="_blank" rel="noopenner noreferrer" href="https://project27skills.com/volunteering/certification.html">community roles and certifications page.</a>
+</p>
+
+{% for person in site.data.members[member] %}</h2>
+<h2>Membership status for {{ person.name }}</h2>
+
+<p>
+According to our records, you are a {{ person.type }} member, working as a certified {{ person.level }} in the {{ person.team }} team.
+</p>
+
+{% for item in person['certificates'} %}
+{% if item.achieved == true %}
+{% if item.title contains "Guest" %}
+<a href="{{ item.link }}">
+🔓 {{ item.title }} - {{ item.instruction }}
+</a>
+{% else %}
+<a href="{{ item.link }}">
+🔓 {{ item.title }} - View your certificate
+</a>
+{% endif %}
+{% else %}
+<a class="disabled" aria-disabled="true" href="#">
+🔒 {{ item.title }} - {{ item.instruction }}
+</a>
+{% endif %}
+{% endfor %}
+{% endfor %}

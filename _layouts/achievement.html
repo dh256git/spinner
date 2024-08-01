@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+{% assign url_segments = page.url | split: '/' %}
+{% assign member = url_segments[2] %}
+
+<h1>{{ page.title }}</h1>
+
+{% for person in site.data.members[member] %}</h2>
+<p>
+Congratulations {{ member }}!
+</p>
+
+<p>
+This certificate is proof of your achievements as a {{ person.level }} in the {{ person.team }} team of the Project27 Community, as a {{ person.type }}.
+</p>
+
+<img src="{{ '/assets/images' }}{{ page.badge }}" alt="{{ page.alt }}" height="150px" width="150px">
+
+<ul>
+<li>
+Certified member: {{ person.name }}
+</li>
+<li>
+Date of certification: {{ page.date  | date_to_rfc822 | date: "%d %b %Y" }}
+</li>
+<li>
+Certified by: <a target="_blank" rel="noopenner noreferrer" href="https://project27skills.com">Project27 Consultancy Group C.I.C.</a>
+</li>
+</ul>
+{% endfor %}

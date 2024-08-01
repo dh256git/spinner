@@ -23,16 +23,16 @@ According to our records, you are a {{ person.type }} member, working as a certi
 {% if item.title contains "Guest" %}
 <a href="{{ item.link }}">
 🔓 {{ item.title }} - {{ item.instruction }}
-</a>
+</a><br>
 {% else %}
 <a href="{{ item.link }}">
 🔓 {{ item.title }} - View your certificate
-</a>
+</a><br>
 {% endif %}
 {% else %}
 <a class="disabled" aria-disabled="true" href="#">
 🔒 {{ item.title }} - {{ item.instruction }}
-</a>
+</a><br>
 {% endif %}
 {% endfor %}
 {% endfor %}
